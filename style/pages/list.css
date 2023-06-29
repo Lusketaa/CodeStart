@@ -1,0 +1,18 @@
+.lf-list > .lf-wrapper > .main-content > .title-button {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lf-list > .lf-wrapper > .main-content > .title-button > .title {
+    font-size: calc(var(--font-size-base) + 30px);
+    font-weight: 700;
+}
+
+.lf-list > .lf-wrapper > .main-content > .title-button > .button-wrapper {
+
+}
+
+.lf-list > .lf-wrapper > .main-content > .table-wrapper {
+    margin-top: 32px;
+}

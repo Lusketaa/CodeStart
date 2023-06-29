@@ -1,0 +1,16 @@
+:root{
+    /* PRIMARY */
+    --lf-color-primary-light: #004cd8;
+    --lf-color-primary: #0041be;
+
+    /* DANGER */
+    --lf-color-danger: #FF2222;
+
+    /* GRAY */
+    --lf-color-gray: #767684;
+    --lf-color-gray-lighter: rgba(196, 196, 196, 0.35);
+    --lf-color-gray-lightest: #f9fbfd;
+    --lf-color-gray-light: #b8b7b7;
+    --lf-color-gray-dark: #09090a;
+    
+}

@@ -1,0 +1,54 @@
+/* Classe base lf-radio */
+.lf-radio{
+    position: relative;
+    padding-left: 32px;
+    padding-top: 2px;
+    cursor: pointer;
+    font-size: calc(var(--lf-font-size-base) + 8px);
+    font-family: var(--lf-font-family-base);
+}
+
+
+/* Esconde o radio button nativo do browser */
+.lf-radio > input{
+    opacity: 0;
+    position: absolute;
+    cursor: default;
+}
+
+/* Estilo base do checkmarker */
+.lf-radio > .checkmark{
+    display: inline-block;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    border: 2px solid var(--lf-color-gray-dark);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Estilo do preenchimento do checkmark quando marcado */
+.lf-radio > input:checked ~ .checkmark{
+    background-color: white;
+    border-color: var(--lf-color-primary);
+    transition: 0.2s;
+}
+
+/* Estilo do pontinho dentro do checkmark */
+.lf-radio >.checkmark::after{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 3px;
+    background-color: var(--lf-color-primary);
+    display: none;
+}
+
+/* Mostra o ponto quando o checkmark for clicado */
+.lf-radio >input:checked ~ .checkmark::after{
+    display: block;
+}

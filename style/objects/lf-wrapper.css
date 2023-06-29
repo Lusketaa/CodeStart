@@ -1,0 +1,41 @@
+.lf-wrapper {
+    max-width: var(--lf-main-wrapper);
+    margin: 0 auto;
+}
+
+.lf-wrapper > .main-content{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: var(--lf-header-size);
+}
+
+.lf-wrapper > .main-content > .back-btn {
+    position: fixed;
+    top: calc(var(--lf-header-size) + 38px);
+    font-size: calc(var(--font-size-base) + 38px);
+    cursor: pointer;
+    color: var(--lf-color-gray-dark);
+    text-decoration: none;
+}
+
+.lf-wrapper > .main-content.-one-colum{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: var(--lf-header-size);
+}
+
+.lf-wrapper > .main-content > .right{
+    overflow: hidden;
+    position: relative;
+    height: calc(100vh - var(--lf-header-size));
+}
+
+.lf-wrapper > .main-content > .right > .image{
+    position: absolute;
+    height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
