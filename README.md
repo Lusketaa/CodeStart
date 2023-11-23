@@ -7,6 +7,7 @@ Aqui estão algumas tecnologias que utilizei no projeto:
 * HTML
 * CSS
 * JavaScript
+* MockAPI
 
 ## Resumo 
 
